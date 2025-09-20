@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pop-up Creation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1fd1db",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#112021",
+                        "foreground-light": "#112021",
+                        "foreground-dark": "#f6f8f8",
+                        "input-light": "#ffffff",
+                        "input-dark": "#1a2e2f",
+                        "placeholder-light": "#6b8d8f",
+                        "placeholder-dark": "#8a9f9f",
+                        "tag-light": "#e7fafa",
+                        "tag-dark": "#1a3a3c"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem", // a more modern, rounded look
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex flex-col h-screen justify-between">
+<div class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between py-4">
+<button class="text-foreground-light dark:text-foreground-dark p-2 -ml-2">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="text-lg font-bold text-foreground-light dark:text-foreground-dark">Host</h1>
+<div class="w-8"></div>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-6">
+<h2 class="text-3xl font-bold text-foreground-light dark:text-foreground-dark mb-8">Create a pop-up</h2>
+<form class="space-y-8">
+<div>
+<label class="text-sm font-medium text-foreground-light/80 dark:text-foreground-dark/80 mb-2 block" for="title">Title</label>
+<input class="w-full bg-input-light dark:bg-input-dark border-2 border-transparent focus:border-primary text-foreground-light dark:text-foreground-dark placeholder-placeholder-light dark:placeholder-placeholder-dark rounded-lg p-4 focus:ring-0" id="title" placeholder="e.g., Sunset Art Fair" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-foreground-light/80 dark:text-foreground-dark/80 mb-2 block" for="description">Description</label>
+<textarea class="w-full bg-input-light dark:bg-input-dark border-2 border-transparent focus:border-primary text-foreground-light dark:text-foreground-dark placeholder-placeholder-light dark:placeholder-placeholder-dark rounded-lg p-4 resize-none focus:ring-0" id="description" placeholder="Tell us more about your event..." rows="5"></textarea>
+</div>
+<div>
+<h3 class="text-sm font-medium text-foreground-light/80 dark:text-foreground-dark/80 mb-3">Category</h3>
+<div class="flex flex-wrap gap-3">
+<button class="px-4 py-2 rounded-full text-sm font-medium bg-tag-light dark:bg-tag-dark text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="button">Food</button>
+<button class="px-4 py-2 rounded-full text-sm font-medium bg-primary text-background-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="button">Art</button>
+<button class="px-4 py-2 rounded-full text-sm font-medium bg-tag-light dark:bg-tag-dark text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="button">Music</button>
+<button class="px-4 py-2 rounded-full text-sm font-medium bg-tag-light dark:bg-tag-dark text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="button">Fashion</button>
+<button class="px-4 py-2 rounded-full text-sm font-medium bg-tag-light dark:bg-tag-dark text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="button">Tech</button>
+</div>
+</div>
+</form>
+</main>
+</div>
+<footer class="bg-background-light dark:bg-background-dark border-t border-white/10 dark:border-black/10">
+<div class="container mx-auto px-4 py-4">
+<button class="w-full bg-primary text-background-dark font-bold py-4 px-5 rounded-lg text-base shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-primary/50">Next</button>
+</div>
+<div class="h-5"></div>
+</footer>
+</div>
+
+</body></html>

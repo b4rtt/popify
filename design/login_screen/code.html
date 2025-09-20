@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1fd1db",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#112021",
+                        "text-light": "#112021",
+                        "text-dark": "#f6f8f8",
+                        "subtle-light": "#9ca3af",
+                        "subtle-dark": "#6b7280",
+                        "input-light": "#ffffff",
+                        "input-dark": "#1e2e2f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+<div class="mx-auto w-full max-w-md">
+<div class="text-center">
+<svg class="mx-auto h-12 w-auto text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM24 38C16.27 38 10 31.73 10 24C10 16.27 16.27 10 24 10C31.73 10 38 16.27 38 24C38 31.73 31.73 38 24 38Z" fill="currentColor"></path>
+<path d="M24 18C21.24 18 19 20.24 19 23C19 24.18 19.45 25.26 20.2 26.1L26.1 20.2C25.26 19.45 24.18 19 23 19H24V18ZM28 29C30.76 29 33 26.76 33 24C33 22.82 32.55 21.74 31.8 20.9L20.9 31.8C21.74 32.55 22.82 33 24 33V34C26.21 34 28 32.21 28 30V29Z" fill="currentColor" fill-opacity="0.5"></path>
+</svg>
+<h1 class="mt-6 text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">
+                    Welcome Back
+                </h1>
+<p class="mt-2 text-sm text-subtle-light dark:text-subtle-dark">
+                    Log in to discover local events.
+                </p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="rounded-xl -space-y-px">
+<div>
+<label class="sr-only" for="nickname">Nickname</label>
+<input class="form-input appearance-none relative block w-full px-4 py-3 bg-input-light dark:bg-input-dark border border-subtle-light/20 dark:border-subtle-dark/20 placeholder-subtle-light dark:placeholder-subtle-dark text-text-light dark:text-text-dark rounded-t-lg focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="nickname" name="nickname" placeholder="Nickname" required="" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="passcode">Passcode</label>
+<input autocomplete="current-password" class="form-input appearance-none relative block w-full px-4 py-3 bg-input-light dark:bg-input-dark border border-subtle-light/20 dark:border-subtle-dark/20 placeholder-subtle-light dark:placeholder-subtle-dark text-text-light dark:text-text-dark rounded-b-lg focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" id="passcode" name="passcode" placeholder="Passcode" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-end">
+<div class="text-sm">
+<a class="font-medium text-primary hover:text-primary/80" href="#">
+                            Forgot your passcode?
+                        </a>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-xl text-black bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="submit">
+                        Log In
+                    </button>
+</div>
+</form>
+</div>
+</div>
+
+</body></html>

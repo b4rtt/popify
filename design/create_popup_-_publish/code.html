@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Review &amp; Publish</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1fd1db",
+            "background-light": "#f6f8f8",
+            "background-dark": "#112021",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col h-screen justify-between">
+<div class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex items-center p-4">
+<button class="text-gray-800 dark:text-gray-200 p-2 -ml-2">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold flex-1 text-center mr-8 text-gray-900 dark:text-white">Review &amp; Publish</h1>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<section>
+<h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Event Details</h2>
+<div class="bg-white dark:bg-gray-800/20 rounded-xl shadow-sm">
+<div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+<span class="text-sm text-gray-500 dark:text-gray-400">Event Name</span>
+<span class="font-medium text-gray-900 dark:text-white">Summer BBQ</span>
+</div>
+<div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+<span class="text-sm text-gray-500 dark:text-gray-400">Date &amp; Time</span>
+<span class="font-medium text-gray-900 dark:text-white text-right">July 20, 2024<br/>6:00 PM</span>
+</div>
+<div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+<span class="text-sm text-gray-500 dark:text-gray-400">Location</span>
+<span class="font-medium text-gray-900 dark:text-white text-right">Central Park<br/>New York</span>
+</div>
+<div class="p-4 flex flex-col">
+<span class="text-sm text-gray-500 dark:text-gray-400 mb-2">Description</span>
+<p class="text-sm font-medium text-gray-900 dark:text-white">Join us for a fun-filled summer BBQ with delicious food, games, and great company.</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Pricing</h2>
+<div class="bg-white dark:bg-gray-800/20 rounded-xl shadow-sm">
+<div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+<span class="text-sm text-gray-500 dark:text-gray-400">Ticket Price</span>
+<span class="font-medium text-gray-900 dark:text-white">$25 per person</span>
+</div>
+<div class="p-4 flex justify-between items-center">
+<span class="text-sm text-gray-500 dark:text-gray-400">Publishing Fee</span>
+<div class="flex items-center gap-2 font-medium text-gray-900 dark:text-white">
+<svg class="text-yellow-500" fill="currentColor" height="16" viewBox="0 0 256 256" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm42.2-96.88a8,8,0,0,1,0,13.76l-32,18.29a8,8,0,0,1-11.45-6.88V99.83a8,8,0,0,1,11.45-6.88l32,18.29ZM112,72v24H96a8,8,0,0,0,0,16h16v16a8,8,0,0,0,16,0V112h8a8,8,0,0,0,0-16h-8V72a8,8,0,0,0-16,0Zm0,112v-8a8,8,0,0,0-16,0v8H80a8,8,0,0,0,0,16h16v24a8,8,0,0,0,16,0v-24h16a8,8,0,0,0,0-16Z"></path>
+</svg>
+<span>0.0001 BTC</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700/50 p-4 pb-6">
+<button class="w-full h-12 bg-primary text-background-dark font-bold rounded-lg flex items-center justify-center gap-2 shadow-lg hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Publish &amp; Pay Fee</span>
+</button>
+<div class="mt-4 flex justify-around items-center">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-xs font-medium">Map</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+<span class="text-xs font-bold">Host</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">wallet</span>
+<span class="text-xs font-medium">Wallet</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Favorites</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

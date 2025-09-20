@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pop-up Event Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#33bdc4",
+            "background-light": "#f6f8f8",
+            "background-dark": "#112021",
+            "foreground-light": "#111717",
+            "foreground-dark": "#e3e8e8",
+            "card-light": "#ffffff",
+            "card-dark": "#1a2a2b",
+            "border-light": "#e3e8e8",
+            "border-dark": "#2a3c3d"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="max-w-md mx-auto">
+<div class="relative">
+<img alt="Garden party banner" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm3HG1JDxZJBr_3qFzGOrqRtbPsE48182em15vVeKzelu_A5tcx0GLmw-LclWzz7f_DvBRZvfd_gICBkxN21fXrty3ytcPeONGn_FQfixFP1snriAqItEl1N6gou-8P6ham12qokNzhy3elMl_3a5UOp1br_MqGxrlct5MVQkxUU3oGR6ic1uRyxo7zmuFNBdMZv23bQtMD7WkvOYhmtBKnZw2BbCEWqpCM47OV0Vn2FFtwTD9x-TqpBlqQEAeAxP3xi3Ss3WVE8Y"/>
+<div class="absolute top-4 left-4 right-4 flex justify-between">
+<button class="bg-card-light/80 dark:bg-card-dark/80 rounded-full p-2 text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="bg-card-light/80 dark:bg-card-dark/80 rounded-full p-2 text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<div class="p-5">
+<h1 class="text-2xl font-bold">Garden Party</h1>
+<div class="flex items-center mt-3">
+<img alt="Host avatar" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiVadhGM3bG3NElbUCJ7OKmRs6mNB7cKQsEENVP1u7Iao-YRc5EkphP5zPcMmBt6cPd92KXQeE_seGbhiMGpPXb0xFaNz2xCr_j7jR3Jch_cOSSvKpcLdwr4pAXWdN3CVsqlfa30hLfjO6zOeQxZJGO3ZAkJFgCb7c2e_PSBhonV52MfFOhhpUNY6r3ZYmNhpPiT5H-7x0YVGInf5u3eXOcKv9EEs_Yg1SfidxSrTG67cxD1Qr6kKdDksk5iNeuGdeh56c1x8GBSA"/>
+<p class="ml-3 text-sm font-medium text-foreground-light/80 dark:text-foreground-dark/80">Host: @GardenGal</p>
+</div>
+</div>
+<div class="px-5">
+<h2 class="text-lg font-bold">Upcoming open windows</h2>
+<div class="relative mt-3 rounded-lg overflow-hidden">
+<img alt="Event time background" class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDchmFSDwQsrnRR9U1eCs6PWN6VUec0Yd7WqLL4gmVh88UAmIql3fvri2KlG4xQaa2liZPNOf6CyzH59tRXD1gavzun80-AzyWiU0SyFbkAxkRfSP6B55BzsPpIun5O6a658HN4h8QmxkNvfOEo6Ve9HzLEYh4oobgFluPOrsc7hsnjZ-y68371IWU1KvqEQYyaoP7PUxJn8e90g_4KrcFhWiwIgXeIw2ECwz8yHTkWG2-uXoF4oOsJ4besCS9CXbIDQ0rrgmmSkWE"/>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<p class="text-white text-xl font-bold">July 20, 2024</p>
+<p class="text-white text-sm">6:00 PM - 10:00 PM</p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-background-light dark:bg-background-dark p-4 border-t border-border-light dark:border-border-dark">
+<div class="flex gap-4">
+<button class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full border border-primary text-primary font-bold">
+<span class="material-symbols-outlined">map</span>
+          Navigate
+        </button>
+<button class="flex-1 py-3 px-4 rounded-full bg-primary text-white font-bold">
+          Pay
+        </button>
+</div>
+</div>
+</div>
+
+</body></html>

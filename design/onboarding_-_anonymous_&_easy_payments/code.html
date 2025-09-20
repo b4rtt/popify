@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1fd1db",
+              "background-light": "#f6f8f8",
+              "background-dark": "#112021",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex h-full flex-col items-center justify-center p-6 text-center">
+<div class="mb-10 flex h-48 w-48 items-center justify-center rounded-full bg-background-dark dark:bg-background-light/5">
+<div class="relative h-32 w-32">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 80px">qr_code_scanner</span>
+</div>
+<div class="absolute -bottom-4 -right-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary">
+<span class="material-symbols-outlined text-background-dark" style="font-size: 28px">bolt</span>
+</div>
+</div>
+</div>
+<h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Go Incognito</h1>
+<p class="mt-4 max-w-sm text-base text-gray-600 dark:text-gray-400">
+          Discover and host pop-up events anonymously. No accounts needed, just a random nickname and a secure wallet for easy Bitcoin Lightning payments.
+        </p>
+</div>
+<div class="sticky bottom-0 w-full bg-background-light/80 p-4 pb-6 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex w-full items-center justify-center rounded-lg bg-primary py-4 text-base font-bold text-background-dark transition-opacity hover:opacity-90">Get Started</button>
+</div>
+</div>
+
+
+</body></html>

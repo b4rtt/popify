@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wallet</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#33bdc4",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#112021",
+                        "content-light": "#111717",
+                        "content-dark": "#e8eeee",
+                        "subtle-light": "#648587",
+                        "subtle-dark": "#9ab0b2",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2c2d",
+                        "border-light": "#e3e8e8",
+                        "border-dark": "#2b3d3f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-4">
+<div class="relative flex items-center justify-center">
+<button class="absolute left-0 text-content-light dark:text-content-dark">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold text-content-light dark:text-content-dark">Wallet</h1>
+</div>
+</header>
+<section class="py-12 px-6 text-center">
+<h2 class="text-5xl font-black text-content-light dark:text-content-dark tracking-tight">12,345 sats</h2>
+</section>
+<section class="px-6 pb-8">
+<div class="flex items-center space-x-4">
+<button class="flex-1 py-3 px-4 rounded-full bg-primary text-background-dark text-base font-bold transition-transform active:scale-95">Top up</button>
+<button class="flex-1 py-3 px-4 rounded-full bg-primary/20 dark:bg-primary/30 text-primary font-bold transition-transform active:scale-95">Withdraw</button>
+</div>
+</section>
+<section class="px-6">
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark mb-4">Recent Transactions</h3>
+<div class="space-y-3">
+<div class="flex items-center p-4 rounded-xl bg-surface-light dark:bg-surface-dark">
+<div class="p-3 rounded-full bg-primary/10 dark:bg-primary/20 mr-4">
+<span class="material-symbols-outlined text-primary">south_west</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-content-light dark:text-content-dark">From Alex</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Received</p>
+</div>
+<p class="font-semibold text-content-light dark:text-content-dark">+5,000 sats</p>
+</div>
+<div class="flex items-center p-4 rounded-xl bg-surface-light dark:bg-surface-dark">
+<div class="p-3 rounded-full bg-primary/10 dark:bg-primary/20 mr-4">
+<span class="material-symbols-outlined text-primary">north_east</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-content-light dark:text-content-dark">To Cafe Latte</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Sent</p>
+</div>
+<p class="font-semibold text-content-light dark:text-content-dark">-2,500 sats</p>
+</div>
+<div class="flex items-center p-4 rounded-xl bg-surface-light dark:bg-surface-dark">
+<div class="p-3 rounded-full bg-primary/10 dark:bg-primary/20 mr-4">
+<span class="material-symbols-outlined text-primary">south_west</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-content-light dark:text-content-dark">From Sarah</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Received</p>
+</div>
+<p class="font-semibold text-content-light dark:text-content-dark">+10,000 sats</p>
+</div>
+<div class="flex items-center p-4 rounded-xl bg-surface-light dark:bg-surface-dark">
+<div class="p-3 rounded-full bg-primary/10 dark:bg-primary/20 mr-4">
+<span class="material-symbols-outlined text-primary">north_east</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-content-light dark:text-content-dark">To The Art Gallery</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Sent</p>
+</div>
+<p class="font-semibold text-content-light dark:text-content-dark">-1,000 sats</p>
+</div>
+</div>
+</section>
+</main>
+<nav class="sticky bottom-0 bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark p-2">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center w-1/4 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">map</span>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">add_box</span>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-primary" href="#">
+<div class="p-3 bg-primary/10 rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">account_balance_wallet</span>
+</div>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">favorite</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

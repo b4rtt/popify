@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Host Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1fd1db",
+            "background-light": "#f6f8f8",
+            "background-dark": "#112021",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<button class="text-gray-800 dark:text-gray-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-lg font-bold text-gray-900 dark:text-gray-100 flex-1 text-center">Your Pop-ups</h1>
+<div class="w-8"></div>
+</header>
+<main class="p-4 space-y-6">
+<div class="flex gap-2">
+<div class="relative flex-1">
+<select class="w-full appearance-none bg-white dark:bg-background-dark/50 border-none rounded-full h-10 px-4 pr-10 text-gray-900 dark:text-gray-100 text-sm font-medium shadow-sm focus:ring-2 focus:ring-primary/50">
+<option>Active</option>
+<option>Past</option>
+<option>Drafts</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500 pointer-events-none">expand_more</span>
+</div>
+<div class="relative flex-1">
+<select class="w-full appearance-none bg-white dark:bg-background-dark/50 border-none rounded-full h-10 px-4 pr-10 text-gray-900 dark:text-gray-100 text-sm font-medium shadow-sm focus:ring-2 focus:ring-primary/50">
+<option>Sort by: Date Created</option>
+<option>Sort by: Upcoming First</option>
+<option>Sort by: Most Payments</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<h2 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Active</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC33K6BXOwcP_sIX9qYO2b6sN7SU1T0zlqtX4hmUPlzosHK6wt6l29laBWV1krDCKJPjKhlZAlRfAr85ETAiil4VzKzpQnnrlcMGX618HawMfU2snc4qpGQw3qOr7tixrHPVC-SWc2Tc5QUowQzTh8pcc3sLsHnBA4chv-l6WGiGi1koqPo_KNL_h1HhrmJB_HmCqSV7l-GB5P3ubWacgO_k-L4BdzUIlojhSDYPEBMRkIfygZ3KFiFMqOP4v30tGTttz-_n_mUoPk");'></div>
+<div class="flex-grow">
+<p class="text-base font-bold text-gray-900 dark:text-gray-100 line-clamp-1">Artisan Market</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">123 views · 2 payments</p>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-primary/20 text-primary text-sm font-medium">Edit</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-200 text-sm font-medium">Close</button>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4J6zwb74sbjkvAczOyK2-yCygSdmva3IWtLmqcfLc796HdkhL07vymLWUn3cAHrYNVBJsl0ua3PdDBUcM2eoByribBng8uI0nMP12FC3BQSEGUagQfJM1Rh-4F7rL1PvpaX2O5zfanzQPPHPmGvwDEU248lqhPjL8LAtI50V2KrsClh_LcxcDBQdHE5H4m7J2ncjmJdK4mazobwgP7f4SfxyejQZk7fqCHpPciMM-5eS2vHBEITQc-nfarCl_1g0pCbZK1Ym2Kbo");'></div>
+<div class="flex-grow">
+<p class="text-base font-bold text-gray-900 dark:text-gray-100 line-clamp-1">Live Music Night</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">456 views · 5 payments</p>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-primary/20 text-primary text-sm font-medium">Edit</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-200 text-sm font-medium">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Past</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 rounded-xl p-4 flex items-center gap-4 shadow-sm opacity-60">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnVKLKfLlxd8ZMx0C2sFwov60XsvGZB1vbZkVc0y5NsUD_gKSBGcIT2uaBJfAx1EISzb_TJRg0oxPMTmv0Jonvej7Q2xWEBsSOeCbffXKMphBZeuv4aiyx6jpUbY5Sc-nYqcNJMPMmPSLVNkdjnVc0bf6EluVPTKGFKcVzWaM7whGz6VHxjacxMy4e0JcgZpReA2rOuszbE8m4xNLOCjebAaivk6m3dp7bbSpDDe-xAkxaidWlGtxf9gQhC0gdFSPlLztvoTtWQJM");'></div>
+<div class="flex-grow">
+<p class="text-base font-bold text-gray-900 dark:text-gray-100 line-clamp-1">Food Truck Festival</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">789 views · 10 payments</p>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-400">Closed</span>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl p-4 flex items-center gap-4 shadow-sm opacity-60">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdV-sfJQ5IWAT12i3W-BnM6_XWWEdh6O0EeuMQUMLAP1TMC5ManOxWkPpMV-BaFAyLA92aGk9KlYCc2zNl3LPfaHIqeu0ZZWpWw1WFEOlKPB7o4T1_5_5KIBMReq-pDgNh4uzChAcCUD0c4E6OtzpUlwUqqS2G_goyuNyU-tSWFQoGm15vk4s2WAeqpnkhyl27qypaBGB5387KMJUjVAVHqf9uOAL7kwZmwrnFcQ27VQ-NVHggNTsMHzl4ESJorEM0Qhap8X-skP0");'></div>
+<div class="flex-grow">
+<p class="text-base font-bold text-gray-900 dark:text-gray-100 line-clamp-1">Book Swap</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">101 views · 1 payment</p>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-400">Closed</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200/50 dark:border-white/10">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-xs font-medium">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1.5 -mt-8" href="#">
+<div class="bg-primary rounded-full p-4 text-white shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined text-3xl">add</span>
+</div>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Favorites</span>
+</a>
+</nav>
+<div class="bg-white dark:bg-background-dark h-safe-area-bottom"></div>
+</footer>
+</div>
+
+</body></html>

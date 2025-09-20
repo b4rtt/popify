@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1fd1db",
+              "background-light": "#f6f8f8",
+              "background-dark": "#112021",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-full min-h-screen w-full flex-col">
+<header class="flex h-14 items-center justify-end px-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-600 dark:text-gray-400">
+<span class="material-symbols-outlined"> close </span>
+</button>
+</header>
+<main class="flex flex-1 flex-col items-center justify-center px-6 text-center">
+<div class="mb-6 h-48 w-48 overflow-hidden rounded-xl">
+<img alt="Vibrant event photo" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAUNHnfYNLCaNDagwWyAg1p5Fy9VfuIekoxYpD-6HS_hn9ENtljytwAHxer4ZSyIV4zXW4TS9kVcuGWmGJAxD8AKl_hNLwFKXdSrOC-LGOn2CSary2McXQ1wb-Ch5lNs6mRDuyPkqRz8QXV3WP0ZXRjeSi2kRb5EMDhVUSvJbU7aRW7kCA3bNO6-fTV0suBep4q9fvba9eCwDq7F77_ReWMRGSiytXwuLbINwsCNOO9A9hIIuv3JOhyRN5vUJYVcp-cadWo4Jbvfc"/>
+</div>
+<h1 class="mb-3 text-3xl font-bold text-gray-900 dark:text-white">Host your own pop-up</h1>
+<p class="max-w-md text-base text-gray-600 dark:text-gray-400">
+          Create and manage your own pop-up events. Set up, price, and accept Bitcoin Lightning payments with ease.
+        </p>
+</main>
+<footer class="p-6">
+<button class="w-full rounded-lg bg-primary py-3.5 text-base font-bold text-background-dark transition-opacity hover:opacity-90">
+          Get Started
+        </button>
+</footer>
+</div>
+
+</body></html>

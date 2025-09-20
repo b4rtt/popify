@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rate Event</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1fd1db",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#112021",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<header class="p-4 flex items-center">
+<button class="text-stone-900 dark:text-stone-200">
+<span class="material-symbols-outlined">close</span>
+</button>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-4 space-y-8">
+<div class="text-center space-y-2">
+<h1 class="text-3xl font-bold text-stone-900 dark:text-stone-100">How was the event?</h1>
+<p class="text-stone-600 dark:text-stone-400">Your feedback helps us improve.</p>
+</div>
+<div class="flex space-x-2 text-4xl text-stone-300 dark:text-stone-600">
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-4xl">star</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-4xl">star</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-4xl">star</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-4xl">star</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined !text-4xl">star</span>
+</button>
+</div>
+<div class="w-full max-w-sm">
+<textarea class="w-full h-28 p-3 rounded-lg bg-white/50 dark:bg-black/20 border border-stone-200 dark:border-stone-700 focus:ring-2 focus:ring-primary focus:border-primary transition-all text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-500" placeholder="Tell us more... (optional)"></textarea>
+</div>
+</main>
+<footer class="p-4">
+<button class="w-full bg-primary text-stone-900 font-bold py-3 px-6 rounded-lg text-lg hover:bg-primary/90 transition-colors">
+                Submit
+            </button>
+</footer>
+</div>
+
+</body></html>

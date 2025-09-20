@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1fd1db",
+              "background-light": "#f6f8f8",
+              "background-dark": "#112021",
+            },
+            fontFamily: {
+              "display": ["Inter"],
+            },
+            borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="text-slate-800 dark:text-white">
+<span class="material-symbols-outlined"> arrow_back </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-slate-900 dark:text-white">Favorites</h1>
+<div class="w-8"></div>
+</header>
+<main class="flex-1 overflow-y-auto p-4">
+<ul class="space-y-4">
+<li>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFSpruhRfrErtAPL_tLtcYb82nn6mYvGCgisNnJUyCeheFuqfcNufFZMz6_Od5znFrICWUm7AZT_bSDIolmec_dX0uQwnvnYijC9spfriWdmafh5Gby8f0J7wi-khhIEv-FYvSOrxM5QDdsjQ8y6twpyWjodSRzdd0UKm_jbeNIs1ZLsCoHJpuK_DoFbmiVbShbdczel4vtIzp5b4tBx_SW4176bwxd8Pn0ngXVvA7W8u79i1En03TqiVB87mo449rxOGT0_rMWJE");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Taco Tuesday</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Food &amp; Drink</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-2 w-2 rounded-full bg-green-500"></div>
+<p class="text-sm font-medium text-green-500">Open Now</p>
+</div>
+</div>
+</li>
+<li>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2qzboWIKLfAtgHOgcv47zzALEorKfUh8YD1m_xvQqHfNHD-V4ti0GMA4HRaqJizWKeuF82UMesOwRB1jxN9DDXphO7-781BrLEhA-TIVxXDCEfSjXfyeRAiXBa87IlPYGLLkkkCby7D1TrI_LIJENI35hiu2y_DZY0aLXNG3I6BOOfG_PG3po8z_i_vfjUtCPYsTxF_K3dapr6xdJNxZKcgy5NQKP7LjXnoMAVSkCvjBvJ_KVSb2Aq1laBysDBbdhfR3llrn5ugM");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Street Art Walk</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Art &amp; Culture</p>
+</div>
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Closed</p>
+</div>
+</li>
+<li>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJ49dOaBfslScQ1ZDzZ8J7nF0CspJqyV11eGCVtZOvu1Gtq_asDWKJ91nhSiPZSLmGm7iQptmtizNFc47LmFQYSikvwJgZJ7BIrHDPb4PUOsZkBJZfp1anwyDOSj4E8ZswZAViC25_LgKOOmUKndWyxKmLrHpCSKSUGa0hccIj9T0j4v-xdPvDspZgrV5wDU6Cwi3dm7m6-d4qrgPnbBhCNVSLfzKhkcTiO2IILjzenqIEiUyfwWO-sm574xQoGeLDlgeeEBsKdiU");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Jazz Night</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Music</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-2 w-2 rounded-full bg-green-500"></div>
+<p class="text-sm font-medium text-green-500">Open Now</p>
+</div>
+</div>
+</li>
+<li>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn-H1tjz0pTnlk-cKLFgFrw4dstbRRbEJA1iHUIrUMgzU3IpLFRH2UEYrHAmLASIJ5hOmsvaojtTM6MK7lCWPX1qJkdQCyK4w4UTh5iYxJRm14mv5oCarXA2Ea3QoXSIE5PfPbm7zq2NEVOapqs2CoUfayTtq1wAeJIQLz7zdeM4H2Z6ZCFwdUeBgYqxtDpai0Y2jLXJtBfQyGYTGg7Qg_nS--ke-JZl1XM2uvYHZ3YdpNMJnDOx0fsobOR4mMIHBnXjYR3kMaEBM");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Wine Tasting</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Food &amp; Drink</p>
+</div>
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Closed</p>
+</div>
+</li>
+</ul>
+</main>
+<nav class="sticky bottom-0 border-t border-slate-200/50 bg-background-light/80 px-4 pb-3 pt-2 backdrop-blur-sm dark:border-slate-800/50 dark:bg-background-dark/80">
+<div class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> map </span>
+<span class="text-xs font-medium">Map</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> add_box </span>
+<span class="text-xs font-medium">Host</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined"> account_balance_wallet </span>
+<span class="text-xs font-medium">Wallet</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;"> favorite </span>
+<span class="text-xs font-medium">Favorites</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

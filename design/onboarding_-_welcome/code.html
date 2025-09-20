@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pop-up Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1fd1db",
+            "background-light": "#f6f8f8",
+            "background-dark": "#112021",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow flex flex-col justify-center px-6 text-center">
+<div class="mb-8">
+<div class="relative aspect-[3/2] w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAv5KkySBSGqw403npKqQ3e1kC25vu_y9_zKa8ilrpUHD333tTwWHyOl8mWXZ85TCooen5aaWQibnrccfJFR78HGJgZkpWoFL8bg1jzVUB4_q2pRTfagdFV8bS2tHrTArhXWjMyRftLmkeTBJxPIMjzUYOOaqRmqSTIkXLPV4awO9IUNI-ViUN3OdCNciSOX4CpFDM9X1g2PhmloGMYSp-bWbCILLaP3joZ99RQ1UDh_wrhGZsOuPZjRh8nZamGmK-ZJwiKarJVSUw");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</div>
+<h1 class="text-3xl font-bold text-background-dark dark:text-background-light leading-tight tracking-tight">Discover and host pop-up events</h1>
+<p class="mt-3 text-base text-background-dark/70 dark:text-background-light/70 max-w-xs mx-auto">No accounts needed. Get a random nickname and wallet.</p>
+</main>
+<footer class="p-6">
+<button class="w-full bg-primary text-background-dark font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-opacity-90 transition-colors">
+        Get Started
+      </button>
+</footer>
+</div>
+
+</body></html>

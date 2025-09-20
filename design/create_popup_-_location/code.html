@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pop-up Location</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1fd1db",
+            "background-light": "#f6f8f8",
+            "background-dark": "#112021",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col justify-between min-h-screen">
+<div class="flex-grow">
+<header class="p-4">
+<div class="flex items-center justify-between">
+<button class="text-black dark:text-white">
+<svg class="feather feather-arrow-left" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="19" x2="5" y1="12" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white">Host</h1>
+<div class="w-6"></div> 
+</div>
+<div class="flex justify-center items-center space-x-2 pt-6 pb-4">
+<div class="w-2.5 h-2.5 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+</header>
+<main class="px-4">
+<h2 class="text-2xl font-bold text-black dark:text-white mb-4">Where will your pop-up be?</h2>
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden mb-6">
+<img alt="Map indicating event location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMSHr9PIiNsxSVkeXkVCxur5uw7FA3KDkzy45av6Qvmg8fHMPYb7Sj84vYa9ljFfy7ifRtd1NY_75wQ3-tUzm9s6ZBh7-KFKBM6YWtmr6afBZxQbUy15c_UOg9lR9-fn6opR0Gu2DaCORU0E9k_vkwRE1umwOqX3qPt91_DMMGnRlDpVg1XFflgyW7iSz6Zrj0jgCl8dslTCzSR-yoXjoczJTLGq2LBBJGLWYOvsdw7A2arnC5EzxLBczRldEfIziTPlk-rfEjA2M"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 bg-primary/40 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">location_on</span>
+</div>
+</div>
+</div>
+<div>
+<label class="sr-only" for="address">Address (optional)</label>
+<input class="w-full bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 rounded-lg h-14 px-4 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary" id="address" placeholder="Address (optional)" type="text"/>
+</div>
+</main>
+</div>
+<div class="p-4 space-y-4">
+<button class="w-full bg-primary text-black font-bold h-12 rounded-lg flex items-center justify-center">
+        Next
+      </button>
+<nav class="flex justify-around items-center border-t border-primary/20 dark:border-primary/30 pt-3">
+<a class="text-primary flex flex-col items-center" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-xs font-medium">Discover</span>
+</a>
+<a class="text-gray-400 dark:text-gray-500 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-xs font-medium">Create</span>
+</a>
+<a class="text-gray-400 dark:text-gray-500 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="text-xs font-medium">Wallet</span>
+</a>
+<a class="text-gray-400 dark:text-gray-500 flex flex-col items-center" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-medium">Likes</span>
+</a>
+</nav>
+</div>
+</div>
+
+</body></html>
