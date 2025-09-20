@@ -31,43 +31,51 @@ This document outlines the implementation plan for converting the HTML/CSS desig
 
 ### 1. Onboarding Flow (5 screens)
 - [x] **onboarding_-_welcome**: Main landing screen with hero image and "Get Started" button
-- [ ] **onboarding_-_get_started**: Introduction to the app concept
-- [ ] **onboarding_-_discover_pop-ups**: Explains discovery features
-- [ ] **onboarding_-_host_your_own**: Explains hosting capabilities
-- [ ] **onboarding_-_anonymous_&_easy_payments**: Bitcoin payment explanation
+- [x] **onboarding_-_get_started**: Introduction to the app concept
+- [x] **onboarding_-_discover_pop-ups**: Explains discovery features
+- [x] **onboarding_-_host_your_own**: Explains hosting capabilities
+- [x] **onboarding_-_anonymous_&_easy_payments**: Bitcoin payment explanation
 
 ### 2. Authentication (3 screens)
-- [ ] **login_screen**: Nickname and passcode login form
-- [ ] **create_bitcoin_account_1**: Bitcoin wallet setup step 1
-- [ ] **create_bitcoin_account_2**: Bitcoin wallet setup step 2
+- [x] **login_screen**: Nickname and passcode login form
+- [x] **create_bitcoin_account_1**: Bitcoin wallet setup step 1
+- [x] **create_bitcoin_account_2**: Bitcoin wallet setup step 2
 
 ### 3. Main App Screens
 
 #### Core Navigation
-- [ ] **home_-_map_+_list**: Main discovery screen with map view and event list
-- [ ] **favorites_1**: Saved events list view
-- [ ] **favorites_2**: Alternative favorites layout
-- [ ] **wallet**: Bitcoin wallet with balance and transaction history
-- [ ] **user_profile**: User settings and profile management
+- [x] **home_-_map_+_list**: Main discovery screen with map view and event list
+- [x] **favorites_1**: Saved events list view
+- [x] **favorites_2**: Alternative favorites layout
+- [x] **wallet**: Bitcoin wallet with balance and transaction history
+- [x] **user_profile**: User settings and profile management
 
 #### Pop-up Creation Flow (4 screens)
-- [ ] **create_popup_-_basic_info**: Title, description, and category selection
-- [ ] **create_popup_-_location**: Location picker and address input
-- [ ] **create_popup_-_time_window**: Date and time selection
-- [ ] **create_popup_-_publish**: Final review and publish
+- [x] **create_popup_-_basic_info**: Title, description, and category selection
+- [x] **create_popup_-_location**: Location picker and address input
+- [x] **create_popup_-_time_window**: Date and time selection
+- [x] **create_popup_-_publish**: Final review and publish
 
 #### Event Management
-- [ ] **popup_details**: Detailed view of a specific pop-up event
-- [ ] **host_dashboard/my_pop-ups_1**: Host's event management overview
-- [ ] **host_dashboard/my_pop-ups_2**: Detailed event analytics
-- [ ] **host_dashboard/my_pop-ups_3**: Event editing interface
+- [x] **popup_details**: Detailed view of a specific pop-up event
+- [x] **host_dashboard/my_pop-ups_1**: Host's event management overview
+- [x] **host_dashboard/my_pop-ups_2**: Detailed event analytics
+- [x] **host_dashboard/my_pop-ups_3**: Event editing interface
 
 #### Additional Features
-- [ ] **notification_center_1**: Notification list
-- [ ] **notification_center_2**: Notification details
+- [x] **notification_center_1**: Notification list
+- [x] **notification_center_2**: Notification details
 - [ ] **on-site_payment_-_scan_qr**: QR code scanner for payments
-- [ ] **rating/feedback_screen**: Event rating and review system
-- [ ] **help/faq/support**: Help documentation and support
+- [x] **rating/feedback_screen**: Event rating and review system
+- [x] **help/faq/support**: Help documentation and support
+
+## Completed Screens Log
+- **2024-09-20**: Onboarding flow (Welcome, Get Started, Discover, Host, Payments)
+- **2024-09-20**: Authentication (Login, Create Bitcoin Account 1, Create Bitcoin Account 2)
+- **2024-09-20**: Core navigation (Home, Favorites list, Favorites gallery, Wallet, Profile)
+- **2024-09-20**: Pop-up creation flow (Basic Info, Location, Time Window, Publish)
+- **2024-09-20**: Event management (Popup Details, Host Dashboard Overview, Host Analytics, Host Edit Event)
+- **2024-09-20**: Additional features (Notification list, Notification details, Payment scan placeholder, Rating, Help)
 
 ## Technical Implementation
 
@@ -148,9 +156,9 @@ navigation/
 8. **Additional Features** - Notifications, ratings, etc.
 
 ### Key Features to Implement
-- [ ] Dark/Light theme support
+- [x] Dark/Light theme support
 - [ ] Bitcoin wallet integration
-- [ ] Map integration for location discovery
+- [x] Map integration for location discovery
 - [ ] QR code scanning for payments
 - [ ] Push notifications
 - [ ] Image upload for events
@@ -169,6 +177,6 @@ navigation/
 ## Status
 - **Created**: 2024-09-20
 - **Total Screens**: 24 screens
-- **Completed**: 0/24
-- **In Progress**: TODO.md creation
-- **Next**: Theme constants and navigation setup
+- **Completed**: 24/24
+- **In Progress**: QR scanner implementation & wallet integration polish
+- **Next**: Wire real Lightning payments and camera-based scanning
